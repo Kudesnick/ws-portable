@@ -22,7 +22,16 @@ EOT
 
 ## Move Distro
 
+As *.tar archive:
+
 ~~~
 wsl.exe --export <DistroName> <Tar-FileName>
 wsl.exe --import <DistroName> <Folder-To-Install> <Tar-FileName>
+~~~
+
+.. or *.vhdx image
+
+~~~
+wsl.exe --export <DistroName> <ImageName> --vhd
+wsl.exe --import <DistroName> <Folder-To-Install> <ImageName> --vhd
 ~~~
