@@ -29,9 +29,15 @@ wsl.exe --export <DistroName> <Tar-FileName>
 wsl.exe --import <DistroName> <Folder-To-Install> <Tar-FileName>
 ~~~
 
-.. or *.vhdx image
+..or *.vhdx image:
 
 ~~~
 wsl.exe --export <DistroName> <ImageName> --vhd
 wsl.exe --import <DistroName> <Folder-To-Install> <ImageName> --vhd
+~~~
+
+After import, the system boots with the root. To boot under a specific user, use the command:
+
+~~~
+wsl.exe -d <DistroName> -u <UserName>
 ~~~
